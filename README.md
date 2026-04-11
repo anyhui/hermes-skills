@@ -43,6 +43,13 @@ Hermes Agent 精选技能集合，包含飞书集成、抖音运营、数据访�
 | `zhangxuefeng` | 张雪峰思维 | 基于张雪峰方法论的表达框架 |
 | `btclawscan` | 安全扫描 | OpenClaw本地安全体检 |
 
+### 🤖 MLops 训练
+
+| 技能 | 功能 | 说明 |
+|------|------|------|
+| `mlops/training/peft` | PEFT微调 | 使用LoRA/QLoRA进行参数高效微调 |
+| `mlops/training/pytorch-fsdp` | FSDP训练 | PyTorch完全分片数据并行训练 |
+
 ## 技能规范
 
 所有技能遵循 **skill-creator 三级加载框架**：
