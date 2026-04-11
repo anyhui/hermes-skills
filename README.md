@@ -50,6 +50,12 @@ Hermes Agent 精选技能集合，包含飞书集成、抖音运营、数据访�
 | `mlops/training/peft` | PEFT微调 | 使用LoRA/QLoRA进行参数高效微调 |
 | `mlops/training/pytorch-fsdp` | FSDP训练 | PyTorch完全分片数据并行训练 |
 
+### 📚 小说创作
+
+| 技能 | 功能 | 说明 |
+|------|------|------|
+| `novel-creator` | 全能创作引擎 | 设定管理、伏笔追踪、6维度评分、飞书同步 |
+
 ## 技能规范
 
 所有技能遵循 **skill-creator 三级加载框架**：
@@ -78,6 +84,7 @@ Hermes Agent 精选技能集合，包含飞书集成、抖音运营、数据访�
 - ✅ 修复 `lark-minutes` description格式
 - ✅ 精简 `pytorch-fsdp` (160KB → 3.4KB)
 - ✅ 修复 `feishu-card` frontmatter
+- ✅ 新建 `novel-creator` 技能（融合多技能核心能力）
 
 ### 2026-04-10
 - 初始导入OpenClaw技能集合
