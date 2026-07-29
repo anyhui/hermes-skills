@@ -15,10 +15,16 @@ jobs:
       matrix:
         python-version: ["3.10", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          submodules: false
+      # The historical repository contains mode-160000 gitlinks without a
+      # matching .gitmodules file. actions/checkout runs submodule cleanup even
+      # with submodules disabled, so use a read-only shallow fetch instead.
+      - name: Check out tracked files without traversing gitlinks
+        shell: bash
+        run: |
+          git init .
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          git -c protocol.version=2 fetch --depth=1 --no-tags origin "${GITHUB_SHA}"
+          git checkout --detach FETCH_HEAD
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
