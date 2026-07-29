@@ -66,7 +66,7 @@ const doc: WBDocument = {
 > **1. `lineShape` 强制选用约束**：
 >   - **`'polyline'`（圆角折线）**：**默认首选**。适用于流程图、架构图等绝大多数场景。
 >   - **`'straight'`（直线）**：适用于**坐标轴、数轴、几何图形边框**等**绝对不能弯曲**的场景。
->   - **`'rightAngle'`（直角折线）**：适用于 [organization.md](scenes/organization.md) 等明确要求“总线/直角规约”、树状层级严格对齐的场景。
+>   - **`'rightAngle'`（直角折线）**：适用于 [organization.md](../scenes/organization.md) 等明确要求“总线/直角规约”、树状层级严格对齐的场景。
 >   - **`'curve'`（曲线）**：适用于优雅的跨层连线（S型弯）、自由发散的脑图分支、或做注解箭头时。
 > **2. 间距要求**：有 connector 连线的卡片间 gap ≥ 40，否则箭头挤在缝里看不清。
 > **3. 顶层约束**：`connector` 必须直接放在 `WBDocument.nodes`，**严禁**嵌套在 `children` 内。建议在数据末尾统一声明连线。
