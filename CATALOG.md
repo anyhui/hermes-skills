@@ -3,7 +3,7 @@
 > 此文件由 `python3 scripts/generate_catalog.py` 生成，请勿手工编辑。
 > 状态仅表示仓库静态检查通过，不代表技能已完成运行时或外部服务集成测试。
 
-共 35 个 tracked 技能。
+共 36 个 tracked 技能。
 
 ## 飞书与 Lark
 
@@ -57,5 +57,6 @@
 
 | 技能 | 路径 | 状态 | 描述 |
 |---|---|---|---|
+| `agent-handoff` | [`agent-handoff/SKILL.md`](agent-handoff/SKILL.md) | 静态检查 | 智能体交接协议：两个 AI 智能体通过一个共享交接区异步协作——文件放在共享云盘文件夹，任务登记在共享看板。当需要查看对方交接给你的任务、认领并处理任务、把成果交付回交接区、向对方发起新任务，或执行首次连接握手时使用。 |
 | `btclawscan` | [`btclawscan/SKILL.md`](btclawscan/SKILL.md) | 静态检查 | OpenClaw 本地安全体检助手。一键全面扫描 OpenClaw 不安全配置、恶意 Skill 与漏洞；支持配置审计、技能审查、版本基线、隐私评估、网络出口扫描。纯本地检测，不依赖外部 API。 |
 | `novel-creator` | [`creative/novel-creator/SKILL.md`](creative/novel-creator/SKILL.md) | 静态检查 | 全能小说创作引擎。融合设定管理、伏笔追踪、多模型审阅、6维度评分、飞书同步。Use when 用户要求写小说、创作故事、规划大纲、设定角色、评分作品、管理长篇连载时触发。 |
